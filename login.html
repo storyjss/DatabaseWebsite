@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml">
+<head>
+	<link href="css/stylesheet2.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8" />
+    <title>PiQL Login</title>
+    <style>
+    .login {
+        margin: center;
+		color: white;
+	}
+    </style>
+    <script src="scripts/login.js"></script>
+</head>
+<body>
+	<center>
+	<div class="flex-container">
+        <div class="flex-child">
+			<div class="login">
+				<form id="form_id" method="post" name="form" action="loginQuery.php">
+					<div class="Username">
+						<label for="Username">Username:
+						<input type="text" name="Username" id="Username" required="required" /></br>
+						</label>
+					</div>
+					<div class="Password">
+						<label for="Password">Password:
+						<input type="password" name="Password" id="Password" required="required" /></br>
+						</label>
+					</div>
+					<div class="Submit">
+						<input class="input-submit" type="Submit" value="Submit" id="Submit" onclick="validate()"/>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	</center>
+</body>
+</html>
